@@ -86,9 +86,9 @@ public class RequestLevelUp
         int xp = 0;
         for (int i = 0; i < level; i++)
             if (level >= 30)
-                xp += 112 + (level - 30) * 9;
+                xp += (level * 9) - 158;
             else
-                xp += level >= 15 ? 37 + (level - 15) * 5 : 7 + level * 2;
+                xp += level >= 15 ? (level * 5) - 38: 7 + level * 2;
 
         return xp;
     }
